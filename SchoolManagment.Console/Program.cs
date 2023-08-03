@@ -73,28 +73,30 @@ namespace SchoolManagment.Console
             //int x = 10;
             //System.Console.WriteLine("Math.Pow(x, 2)  : " + Math.Pow(x, 2));
 
-            int x = 3;
-            switch (x)
-            {
-                case 0:
-                    System.Console.WriteLine($"X is equal 0"); 
-                    break;
-                case 1:
-                    System.Console.WriteLine($"X is equal 1");
-                    break;
-                case 2:
-                    System.Console.WriteLine($"X is equal 2");
-                    break;
+            //int x = 3;
+            //switch (x)
+            //{
+            //    case 0:
+            //        System.Console.WriteLine($"X is equal 0"); 
+            //        break;
+            //    case 1:
+            //        System.Console.WriteLine($"X is equal 1");
+            //        break;
+            //    case 2:
+            //        System.Console.WriteLine($"X is equal 2");
+            //        break;
 
-                default:
-                    System.Console.WriteLine($"X not in my ranage");
-                    break;
-            }
+            //    default:
+            //        System.Console.WriteLine($"X not in my ranage");
+            //        break;
+            //}
 
             //string fName = "Ziad";
             //string sName = "Mubarak";
             //int age = 21;
             //System.Console.WriteLine($"Full Name \" {fName[3]} - {sName} and his age is {age} ");
+       
+            
         }
     }
 }
