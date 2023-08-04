@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Linq;
 namespace SchoolManagment.Console
 {
    
@@ -34,7 +34,6 @@ namespace SchoolManagment.Console
             //System.Console.Write("value : " + myLetter + "\n");
             //System.Console.Write("value : " + myBool + "\n");
             //System.Console.Write("value : " + myText + "\n");
-
 
             //Constant 
             //const int myNum=15 ; // the value must be write in development mode and can not change in runtime mode 
@@ -94,7 +93,41 @@ namespace SchoolManagment.Console
             //string fName = "Ziad";
             //string sName = "Mubarak";
             //int age = 21;
-            //System.Console.WriteLine($"Full Name \" {fName[3]} - {sName} and his age is {age} ");
+            // System.Console.WriteLine($"Full Name\\{fName[3]} {sName} and his age is {age} ");
+
+            //string[] cars = { "Toyota", "Ford", "BMW", "Mazda", "Volvo" };
+            //for(int i = 0; i < cars.Length; i++)
+            //{
+            //if(i == 1 || i == 3)
+            //{
+            // continue;
+            //}
+            //System.Console.WriteLine(cars[i]);
+            //}
+
+            //int[] myNumbers = { 4, 6, 2, 9, 3, 2, 1 };
+
+            //Array.Sort(myNumbers);
+            //foreach(int i in myNumbers)
+            //{
+            //if(i ==3)
+            //{
+            //   continue;
+            //}
+            //else if (i == 6)
+            //{
+            //   break;   
+            // }
+
+
+            //   System.Console.WriteLine(i);
+            // }
+
+            int[] tringNum = { 3, 5, 1, 6, 29, 26, 29, 83, 0, 99 };
+            System.Console.WriteLine(tringNum.Max());
+            System.Console.WriteLine(tringNum.Min());
+            System.Console.WriteLine(tringNum.Sum());
+            System.Console.WriteLine(tringNum.Average());
        
             
         }
