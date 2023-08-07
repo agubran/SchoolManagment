@@ -1,11 +1,40 @@
 ﻿using System;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+
 namespace SchoolManagment.Console
 {
    
     // fName =Ahmed, sName=Mohammed, faName= Gubran => fName+" "+sName+" "+faName Ahmed Mohammed Gubran
     class Program
     {
+        static void MyMethod(string fname , int age)
+        {
+            System.Console.WriteLine(fname + " is " + age);
+        }
+        static int MySecondMethod(int x)
+        {
+            return x + 18;
+        }
+        static int MyThirdMethod(int x , int y)
+        {
+            return x + y;
+        }
+
+        static void MakingChild(string child1 , string child2 , string child3)
+        {
+            System.Console.WriteLine("The adult child is: " + child1);
+        }
+
+        static int MultipleTwoNum(int x, int y)
+        {
+            return x * y;
+        }
+        static double PlusTwoNum(double x, double y)
+        {
+            return x + y;
+        }
+
         static void Main(string[] args)
         {
             // C# Comments    ctrl+c 
@@ -94,6 +123,9 @@ namespace SchoolManagment.Console
             //string sName = "Mubarak";
             //int age = 21;
             // System.Console.WriteLine($"Full Name\\{fName[3]} {sName} and his age is {age} ");
+             
+
+            //Start with Array
 
             //string[] cars = { "Toyota", "Ford", "BMW", "Mazda", "Volvo" };
             //for(int i = 0; i < cars.Length; i++)
@@ -123,13 +155,28 @@ namespace SchoolManagment.Console
             //   System.Console.WriteLine(i);
             // }
 
-            int[] tringNum = { 3, 5, 1, 6, 29, 26, 29, 83, 0, 99 };
-            System.Console.WriteLine(tringNum.Max());
-            System.Console.WriteLine(tringNum.Min());
-            System.Console.WriteLine(tringNum.Sum());
-            System.Console.WriteLine(tringNum.Average());
-       
+            // int[] tringNum = { 3, 5, 1, 6, 29, 26, 29, 83, 0, 99 };
+            // System.Console.WriteLine(tringNum.Max());
+            // System.Console.WriteLine(tringNum.Min());
+            // System.Console.WriteLine(tringNum.Sum());
+            // System.Console.WriteLine(tringNum.Average());
+           
+
+            // start with Method
+            MyMethod("Zeyad", 23);
             
+            System.Console.WriteLine(MySecondMethod(22));
+
+            int z = MyThirdMethod(6, 29);
+            System.Console.WriteLine(z);
+
+            MakingChild(child1: "Ahmed", child2: "Nasser", child3: "Fahad");
+
+            int numOne = MultipleTwoNum(33, 3);
+            double numTwo = PlusTwoNum(28, 22);
+            System.Console.WriteLine("Int: ", +numOne);
+            System.Console.WriteLine("Double: ", +numTwo);
+                                                                            
         }
     }
 }
