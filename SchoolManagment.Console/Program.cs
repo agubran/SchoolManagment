@@ -4,11 +4,33 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace SchoolManagment.Console
 {
-   
+
     // fName =Ahmed, sName=Mohammed, faName= Gubran => fName+" "+sName+" "+faName Ahmed Mohammed Gubran
     class Program
     {
-        static void MyMethod(string fname , int age)
+
+        #region Ziad Code
+        //class Student
+        //{
+        //    //Prop   -> متغي
+        //    string Name;
+        //    int Age;
+        //    DateTime BirthOfDate;
+
+        //    //Method -> دوال
+        //    int  GetAge(DateTime BOD)
+        //    {
+        //        var x = DateTime.Now.Subtract(BOD).Ticks;
+
+        //        return 0;
+        //    }
+        //}
+        //NameSpace(Folder) -> Class -> Properties & Methods
+
+        // Database -> SqlClient
+        // Network  -> Socket TCP UDP 
+
+        static void MyMethod(string fname, int age)
         {
             System.Console.WriteLine(fname + " is " + age);
         }
@@ -16,12 +38,12 @@ namespace SchoolManagment.Console
         {
             return x + 18;
         }
-        static int MyThirdMethod(int x , int y)
+        static int MyThirdMethod(int x, int y)
         {
             return x + y;
         }
 
-        static void MakingChild(string child1 , string child2 , string child3)
+        static void MakingChild(string child1, string child2, string child3)
         {
             System.Console.WriteLine("The adult child is: " + child1);
         }
@@ -34,9 +56,12 @@ namespace SchoolManagment.Console
         {
             return x + y;
         }
+        #endregion
+
 
         static void Main(string[] args)
         {
+            #region 
             // C# Comments    ctrl+c 
             //    UnComments  ctrl+u
             // /*   */
@@ -123,7 +148,7 @@ namespace SchoolManagment.Console
             //string sName = "Mubarak";
             //int age = 21;
             // System.Console.WriteLine($"Full Name\\{fName[3]} {sName} and his age is {age} ");
-             
+
 
             //Start with Array
 
@@ -160,11 +185,11 @@ namespace SchoolManagment.Console
             // System.Console.WriteLine(tringNum.Min());
             // System.Console.WriteLine(tringNum.Sum());
             // System.Console.WriteLine(tringNum.Average());
-           
+            #endregion
 
             // start with Method
             MyMethod("Zeyad", 23);
-            
+
             System.Console.WriteLine(MySecondMethod(22));
 
             int z = MyThirdMethod(6, 29);
@@ -176,11 +201,7 @@ namespace SchoolManagment.Console
             double numTwo = PlusTwoNum(28, 22);
             System.Console.WriteLine("Int: ", +numOne);
             System.Console.WriteLine("Double: ", +numTwo);
-                                                                            
+
         }
     }
 }
-
-
-// Database -> SqlClient
-// Network  -> Socket TCP UDP 
