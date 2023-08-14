@@ -6,11 +6,13 @@ namespace Test
     {
         static void Main(string[] args)
         {
+            StudentDatabase studentDatabase = new StudentDatabase();
+            studentDatabase.ExecuteCode();
             //Car car = new Car();
             //Console.WriteLine($"Ball Status : {car.Status} {car.DriverName}");
             //car.Run("Ziad");
             //Console.WriteLine($"Ball Status : {car.Status} {car.DriverName}");
-        
+
             //Ball ball = new Ball();
             //ball.Color = "Red";
             //ball.Size = "M";
@@ -39,18 +41,18 @@ namespace Test
 
 
             //Employee
-            var emp = new Emploee("Ali");
-            emp.Create("Ahmed");
-            
-            //if(emp.IsActive ==true)
-            //    emp.DeActivation("Ahmed");            
-            //else
-            //   emp.Activation("Ahmed");
+            //var emp = new Emploee("Ali");
+            //emp.Create("Ahmed");
 
-            //Short if statement
-            var x = emp.IsActive ? emp.DeActivation("Ahmed") : emp.Activation("Ahmed");
-             
-            Console.WriteLine($"Name:{emp.Name} - IsActive:{emp.IsActive} - UpdateBy:{emp.GetUpdatedBy()} - UpdateAt:{emp.GetUpdatedAt()}");
+            ////if(emp.IsActive ==true)
+            ////    emp.DeActivation("Ahmed");            
+            ////else
+            ////   emp.Activation("Ahmed");
+
+            ////Short if statement
+            //var x = emp.IsActive ? emp.DeActivation("Ahmed") : emp.Activation("Ahmed");
+
+            //Console.WriteLine($"Name:{emp.Name} - IsActive:{emp.IsActive} - UpdateBy:{emp.GetUpdatedBy()} - UpdateAt:{emp.GetUpdatedAt()}");
         }
     }
 }

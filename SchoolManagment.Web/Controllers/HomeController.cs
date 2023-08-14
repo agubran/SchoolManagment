@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SchoolManagment.Web.AdoDatabase;
 using SchoolManagment.Web.Models;
 using System.Diagnostics;
 
@@ -15,7 +16,8 @@ namespace SchoolManagment.Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            StudentDatabase studentDatabase = new StudentDatabase();
+            return View(studentDatabase.GetStudents());
         }
 
         public IActionResult Privacy()
@@ -27,6 +29,13 @@ namespace SchoolManagment.Web.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+
+        public ActionResult Details(int id)
+        {
+            StudentDatabase studentDatabase = new StudentDatabase();
+            return View(studentDatabase.GetStudent(id));
         }
     }
 }
